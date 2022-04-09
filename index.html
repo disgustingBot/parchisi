@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parchisi</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+
+
+
+
+    <div class="message_background">
+
+        <div class="message_box">
+            <h3 class="message_title">You WIN!</h3>
+            <p class="message_text">press f5 to restart</p>
+        </div>
+    </div>
+
+    <div class="board parchisi red">
+
+        <div class="player_blocker"></div>
+
+
+
+        <!-- pieces -->
+        <div class="piece red r_piece_0"><div class="dice_selector"></div><div class="circle red"></div></div>
+        <div class="piece red r_piece_1"><div class="dice_selector"></div><div class="circle red"></div></div>
+        <div class="piece red r_piece_2"><div class="dice_selector"></div><div class="circle red"></div></div>
+        <div class="piece red r_piece_3"><div class="dice_selector"></div><div class="circle red"></div></div>
+        <div class="piece blu b_piece_0"><div class="dice_selector"></div><div class="circle blu"></div></div>
+        <div class="piece blu b_piece_1"><div class="dice_selector"></div><div class="circle blu"></div></div>
+        <div class="piece blu b_piece_2"><div class="dice_selector"></div><div class="circle blu"></div></div>
+        <div class="piece blu b_piece_3"><div class="dice_selector"></div><div class="circle blu"></div></div>
+        <div class="piece yel y_piece_0"><div class="dice_selector"></div><div class="circle yel"></div></div>
+        <div class="piece yel y_piece_1"><div class="dice_selector"></div><div class="circle yel"></div></div>
+        <div class="piece yel y_piece_2"><div class="dice_selector"></div><div class="circle yel"></div></div>
+        <div class="piece yel y_piece_3"><div class="dice_selector"></div><div class="circle yel"></div></div>
+        <div class="piece gre g_piece_0"><div class="dice_selector"></div><div class="circle gre"></div></div>
+        <div class="piece gre g_piece_1"><div class="dice_selector"></div><div class="circle gre"></div></div>
+        <div class="piece gre g_piece_2"><div class="dice_selector"></div><div class="circle gre"></div></div>
+        <div class="piece gre g_piece_3"><div class="dice_selector"></div><div class="circle gre"></div></div>
+
+        <!-- 
+        red
+        blu
+        yel
+        gre
+        whi -->
+
+        <!-- homes -->
+        <div class="home r_home red"></div>
+        <div class="home g_home gre"></div>
+        <div class="home y_home yel"></div>
+        <div class="home b_home blu"></div>
+
+
+        <!-- loves -->
+        <div class="love r_love red"></div>
+        <div class="love g_love gre"></div>
+        <div class="love y_love yel"></div>
+        <div class="love b_love blu"></div>
+
+        <!-- center -->
+        <div class="center"></div>
+
+        
+
+        <!-- passes -->
+        <div class="r_pas0 r_pass spot red"></div>
+        <div class="r_pas1 r_pass spot red"></div>
+        <div class="r_pas2 r_pass spot red"></div>
+        <div class="r_pas3 r_pass spot red"></div>
+        <div class="r_pas4 r_pass spot red"></div>
+        <div class="r_pas5 r_pass spot red"></div>
+        <div class="r_pas6 r_pass spot red"></div>
+        <div class="g_pas0 g_pass spot gre"></div>
+        <div class="g_pas1 g_pass spot gre"></div>
+        <div class="g_pas2 g_pass spot gre"></div>
+        <div class="g_pas3 g_pass spot gre"></div>
+        <div class="g_pas4 g_pass spot gre"></div>
+        <div class="g_pas5 g_pass spot gre"></div>
+        <div class="g_pas6 g_pass spot gre"></div>
+        <div class="y_pas0 y_pass spot yel"></div>
+        <div class="y_pas1 y_pass spot yel"></div>
+        <div class="y_pas2 y_pass spot yel"></div>
+        <div class="y_pas3 y_pass spot yel"></div>
+        <div class="y_pas4 y_pass spot yel"></div>
+        <div class="y_pas5 y_pass spot yel"></div>
+        <div class="y_pas6 y_pass spot yel"></div>
+        <div class="b_pas0 b_pass spot blu"></div>
+        <div class="b_pas1 b_pass spot blu"></div>
+        <div class="b_pas2 b_pass spot blu"></div>
+        <div class="b_pas3 b_pass spot blu"></div>
+        <div class="b_pas4 b_pass spot blu"></div>
+        <div class="b_pas5 b_pass spot blu"></div>
+        <div class="b_pas6 b_pass spot blu"></div>
+
+
+
+        <!-- road -->
+        <div class="spot spot_00 r_open red"><p class="spot_text">01</p></div>
+        <div class="spot spot_01 r_open whi"><p class="spot_text">02</p></div>
+        <div class="spot spot_02 s_norm whi"><p class="spot_text">03</p></div>
+        <div class="spot spot_03 s_norm whi"><p class="spot_text">04</p></div>
+        <div class="spot spot_04 s_norm whi"><p class="spot_text">05</p></div>
+        <div class="spot spot_05 s_norm whi"><p class="spot_text">06</p></div>
+        <div class="spot spot_06 s_norm whi"><p class="spot_text">07</p></div>
+        <div class="spot spot_07 s_star whi"><p class="spot_text">08</p></div>
+        <div class="spot spot_08 s_norm whi"><p class="spot_text">09</p></div>
+        <div class="spot spot_09 s_norm whi"><p class="spot_text">10</p></div>
+        <div class="spot spot_10 s_norm whi"><p class="spot_text">11</p></div>
+        <div class="spot spot_11 s_norm whi"><p class="spot_text">12</p></div>
+        <div class="spot spot_12 s_star whi"><p class="spot_text">13</p></div>
+        <div class="spot spot_13 s_norm whi"><p class="spot_text">14</p></div>
+        <div class="spot spot_14 s_norm whi"><p class="spot_text">15</p></div>
+        <div class="spot spot_15 s_norm whi"><p class="spot_text">16</p></div>
+        <div class="spot spot_16 s_norm whi"><p class="spot_text">17</p></div>
+        <div class="spot spot_17 g_open gre"><p class="spot_text">18</p></div>
+        <div class="spot spot_18 s_norm whi"><p class="spot_text">19</p></div>
+        <div class="spot spot_19 s_norm whi"><p class="spot_text">20</p></div>
+        <div class="spot spot_20 s_norm whi"><p class="spot_text">21</p></div>
+        <div class="spot spot_21 s_norm whi"><p class="spot_text">22</p></div>
+        <div class="spot spot_22 s_norm whi"><p class="spot_text">23</p></div>
+        <div class="spot spot_23 s_norm whi"><p class="spot_text">24</p></div>
+        <div class="spot spot_24 s_star whi"><p class="spot_text">25</p></div>
+        <div class="spot spot_25 s_norm whi"><p class="spot_text">26</p></div>
+        <div class="spot spot_26 s_norm whi"><p class="spot_text">27</p></div>
+        <div class="spot spot_27 s_norm whi"><p class="spot_text">28</p></div>
+        <div class="spot spot_28 s_norm whi"><p class="spot_text">29</p></div>
+        <div class="spot spot_29 s_star whi"><p class="spot_text">30</p></div>
+        <div class="spot spot_30 s_norm whi"><p class="spot_text">31</p></div>
+        <div class="spot spot_31 s_norm whi"><p class="spot_text">32</p></div>
+        <div class="spot spot_32 s_norm whi"><p class="spot_text">33</p></div>
+        <div class="spot spot_33 s_norm whi"><p class="spot_text">34</p></div>
+        <div class="spot spot_34 y_open yel"><p class="spot_text">35</p></div>
+        <div class="spot spot_35 s_norm whi"><p class="spot_text">36</p></div>
+        <div class="spot spot_36 s_norm whi"><p class="spot_text">37</p></div>
+        <div class="spot spot_37 s_norm whi"><p class="spot_text">38</p></div>
+        <div class="spot spot_38 s_norm whi"><p class="spot_text">39</p></div>
+        <div class="spot spot_39 s_norm whi"><p class="spot_text">40</p></div>
+        <div class="spot spot_40 s_norm whi"><p class="spot_text">41</p></div>
+        <div class="spot spot_41 s_star whi"><p class="spot_text">42</p></div>
+        <div class="spot spot_42 s_norm whi"><p class="spot_text">43</p></div>
+        <div class="spot spot_43 s_norm whi"><p class="spot_text">44</p></div>
+        <div class="spot spot_44 s_norm whi"><p class="spot_text">45</p></div>
+        <div class="spot spot_45 s_norm whi"><p class="spot_text">46</p></div>
+        <div class="spot spot_46 s_star whi"><p class="spot_text">47</p></div>
+        <div class="spot spot_47 s_norm whi"><p class="spot_text">48</p></div>
+        <div class="spot spot_48 s_norm whi"><p class="spot_text">49</p></div>
+        <div class="spot spot_49 s_norm whi"><p class="spot_text">50</p></div>
+        <div class="spot spot_50 s_norm whi"><p class="spot_text">51</p></div>
+        <div class="spot spot_51 b_open blu"><p class="spot_text">52</p></div>
+        <div class="spot spot_52 s_norm whi"><p class="spot_text">53</p></div>
+        <div class="spot spot_53 s_norm whi"><p class="spot_text">54</p></div>
+        <div class="spot spot_54 s_norm whi"><p class="spot_text">55</p></div>
+        <div class="spot spot_55 s_norm whi"><p class="spot_text">56</p></div>
+        <div class="spot spot_56 s_norm whi"><p class="spot_text">57</p></div>
+        <div class="spot spot_57 s_norm whi"><p class="spot_text">58</p></div>
+        <div class="spot spot_58 s_star whi"><p class="spot_text">59</p></div>
+        <div class="spot spot_59 s_norm whi"><p class="spot_text">60</p></div>
+        <div class="spot spot_60 s_norm whi"><p class="spot_text">61</p></div>
+        <div class="spot spot_61 s_norm whi"><p class="spot_text">62</p></div>
+        <div class="spot spot_62 s_norm whi"><p class="spot_text">63</p></div>
+        <div class="spot spot_63 s_star whi"><p class="spot_text">64</p></div>
+        <div class="spot spot_64 s_norm whi"><p class="spot_text">65</p></div>
+        <div class="spot spot_65 s_norm whi"><p class="spot_text">66</p></div>
+        <div class="spot spot_66 s_norm whi"><p class="spot_text">67</p></div>
+        <div class="spot spot_67 s_norm whi"><p class="spot_text">68</p></div>
+    </div>
+
+    <div class="dice_frame">
+        <div class="dice dice_0"><p></p></div>
+        <div class="dice dice_1"><p></p></div>
+    </div>
+
+    <script src="js/game.js"></script> 
+</body>
+</html>
