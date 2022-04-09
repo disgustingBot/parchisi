@@ -1,0 +1,2 @@
+# parchisi
+A parchisi game
